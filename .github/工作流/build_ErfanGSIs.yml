@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://bigota.d.miui.com/20.4.27/miui_MIMIX3_20.4.27_8f7879221b_10.0.zip
-  ROM_NAME: MIUI
+  ROM_URL: https://aabc5c5lsfjr4fbf7hj5evrstgc72888.node.ppio.cloud:5272/fsa167af8c.a.bdydns.com/1435501072/Firmware/Flyme/16th/8.1.5.3/cn/20211228133146/f4d02d52/update.zip?f_ver=v1&max_age=7776000&r=ISwiMgBUQxgXIDNeJCMAU2c1MysJG0JUHiRudTowH0EoKjNtNQIVWhRmcAUnKl0OZ2l4d11dQ1QfZnMDYXNDBHtgZ3FAX1gBXi91V2NwFgN7dyMyFw8YUl8zKEMmKDMsEAoCBh45JF0wJhwH&ppiouid=61e4ffdccf9dee00014eb1bb7596a3f5
+  ROM_NAME: Flyme
   BUILD_TYPE: ab
   TZ: Asia/Shanghai
 
@@ -59,7 +59,7 @@ jobs:
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs/output
               curl -sL https://git.io/file-transfer | sh
-              ./transfer wet ./final/GSI.zip
+              ./transfer gof ./final/GSI.zip
 
          
             
